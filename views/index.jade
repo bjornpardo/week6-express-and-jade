@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h1 Bjorn
+	h2 Welcome #{userData.name} to my site.
+	p My fave hike is #{userData.fave}.
+	ul
+		for hike in boulderHikes
+			li= hike
